@@ -1,0 +1,51 @@
+/* Footer.css */
+
+.main-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+  }
+  
+  .main-footer.hidden {
+    transform: translateY(100%);
+  }
+  
+  .main-footer.visible {
+    transform: translateY(0);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-info,
+  .social-links,
+  .legal-links {
+    flex: 1;
+  }
+  
+  .contact-info p {
+    margin: 0;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+  }
+  
+  .legal-links a {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+  }
+  

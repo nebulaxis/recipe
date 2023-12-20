@@ -1,0 +1,56 @@
+body{
+  background-color:bisque;
+}
+
+
+.signin-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .signin-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .signin-form label {
+    margin-bottom: 8px;
+  }
+  
+  .signin-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .signin-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signin-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signin-form p {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media only screen and (max-width: 600px) {
+    .signin-container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  

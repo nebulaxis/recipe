@@ -1,0 +1,62 @@
+/* header.css */
+
+.main-header {
+    background-color: #e1570d;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth hide/show effect */
+  }
+  
+  .visible {
+    transform: translateY(0);
+  }
+  
+  .hidden {
+    transform: translateY(-100%);
+  }
+  
+  .logo-container {
+    flex: 1;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 60px;
+    margin-right: 5px;
+  }
+  .logo-text {
+    font-size: 3rem; /* Adjust the font size for the logo text */
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+   
+  }
+  .navbar a {
+    /* Your existing styles for navigation links */
+    margin: 0 15px; /* Adjust the margin as needed */
+  }
+  
+  .center-menu {
+    flex-grow: 1;
+    text-align: center;
+  }
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .main-header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .navbar {
+      margin-top: 10px;
+      justify-content: space-around;
+    }
+  }
+  
